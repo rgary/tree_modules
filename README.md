@@ -20,7 +20,7 @@ The signature of the generator looks like this:
     def generator(pixels,tree_speed,tree_angle,form_data):
 The generator must be named "**generator**" so that it can be loaded.
 
-*pixels* is a numpy array of np_int32s each element of which
+*pixels* is a numpy array of np_int32s, each element of which
 can be set to represent the 24-bit RGB color of one pixel 
 on the tree.[^1] For each int, the first 8 bits are ignored.
 The next 8 bits are red, followed by green and finally 
@@ -48,7 +48,7 @@ them, access their ".value" attributes.  As "tree_speed.value" or
 "tree_angle.value"
 
 *form_data* is a place holder for future expansion. The idea is
-that evenually it will be updated with CGI form data provided from
+that evenually it will be updated with CGI form data provided 
 from the tree's web-server to provide some measure of interactive 
 control...
 
