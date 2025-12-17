@@ -26,7 +26,7 @@ on the tree.[^1] For each int, the first 8 bits are ignored.
 The next 8 bits are red, followed by green and finally 
 blue in the low order bits of the int. 
 
-[^1]: If you aren't familiar with numpy arrays, it's okay to think of them and access them the same say you would use a python list.
+[^1]: If you aren't familiar with numpy arrays, it's okay to think of them and access them the same way you would use a python list.
 
 It's often easist to think of this a set hex bytes like "0x00ff9911". 
 Where the red component is 0xff (255), green is '0x99' (63) and blue is 0x11 (17).
