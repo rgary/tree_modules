@@ -68,7 +68,7 @@ Standup-Mathmetician Matt Parker:
 
 His code can be found here: https://github.com/standupmaths/xmastree2021
 it might be interesting to look at his code and see if some of his pattern
-generation can be modified to fit into design modules that will fun on the
+generation can be modified to fit into design modules that will run on the
 Lowell Makes Tree.
 
 # How To Notes
