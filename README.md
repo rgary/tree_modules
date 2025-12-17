@@ -42,8 +42,9 @@ them, access their ".value" attributes.  As "tree_speed.value" or
 "tree_angle.value"
 
 *form_data* is a place holder for future expansion. The idea is
-that evenually it will be updated with CGI form available on the 
-tree web-server.
+that evenually it will be updated with CGI form data provided from
+from the tree's web-server to provide some measure of interactive 
+control..
 
 By importing 'coords' into a module, the module will gain access two lists
 of coordinates and a scalar holding the number of pixels on the tree.
