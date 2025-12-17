@@ -49,6 +49,15 @@ def generator(pixels,tree_speed,tree_angle,form_data):
             yield (pixels,tree_speed.value)
             sleep(pause_time)
     
+#
+# This is only used if you run the module as a program
+# using **python simple_xmas.py**.  It will call the generator
+# in a loop and print the values on each pass.  It's not pretty,
+# but it should give you an idea whether your generator is working
+# as expected.  You can also use pdb and step into the code for
+# more serious debugging.
+#
 if __name__=='__main__':
+   # pdb.set_trace()
    test_loop(generator) 
      
