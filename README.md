@@ -4,7 +4,12 @@ use on a Matt Parker inspired Christimas tree being run at
 [title]Lowell Makes(https://lowellmakes.com) (starting in 2025, 
 possibly continuing in future years.)
 
-# Generators
+The module [simple_xmas.py](https://github.com/rgary/tree_modules/blob/main/simple_xmas.py) is a 
+good first example to look at to see how a module works. For a an even simpler
+template to get started on on writting  your own generator try making a copy of
+[_template.py](https://github.com/rgary/tree_modules/blob/main/_template.py)
+
+# Generator Details
 The main principal of these modules is that they define a python
 generator the yields a array of pixel values and a rotation speed
 that will be applied to the Christmas tree.  Each iteration of the
