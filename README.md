@@ -40,7 +40,24 @@ them, access their ".value" attributes.  As "tree_speed.value" or
 that evenually it will be updated with CGI form available on the 
 tree web-server.
 
-Use sleep() in the generator to control how long each frame is displayed.
+By importing 'coords' into a module, the module will gain access two lists
+of coordinates and a scalar holding the number of pixels on the tree.
+n
+*coords_xyz* are 3D cartesian values for each pixel on the tree. Each coordinate is
+a list of 3 floats representing the position in space. (in arbitrary units).
+Z=0 is the bottom of the tree.  (So, this is a list of lists). The position in
+the coordinate list coresponds to the position in the pixels list passed into the
+generator. X=0 and Y=0 are the along the trunk.
+
+*coords_rtz* are 3D cylindrical values for each pixel on the tree. Like the cartisian
+coordinates, this is a list of lists.  Each point is represented as a radius (from the
+center of the tree, and angle of rotation around the tree and a height.)
+
+*num_pixels* is the number of LEDs. This is a convenince value. The same thing can
+be learned from calling **len(pixels)**.
+
+Use **sleep()** in the generator to control how long each frame is displayed.
+
 
 # Inspiration
 Although no code is shared, the idea for this tree started with a set of videos by
@@ -55,4 +72,4 @@ generation can be modified to fit into design modules that will fun on the
 Lowell Makes Tree.
 
 # How To Notes
-I have a [Google doc](...) describing how to write an example module.
+There is a [Programming Guide](https://docs.google.com/document/d/16mJt8lYL8lNGOJ-FOCAe4bINoPwcgUNgvE3Wvyt0svI/edit?usp=sharing) describing an example of how to write a simple module.
